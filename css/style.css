@@ -1,134 +1,146 @@
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: 'Poppins', sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
 }
 
 :root {
-    --black: #4d4c59;
-    --purple: #6c63ff;
-    --light-grey: #c8c8c8;
-    --text-color: #9c9ab6;
-    --backgroud: #FFFFFF
+  --black: #4d4c59;
+  --purple: #6c63ff;
+  --light-grey: #c8c8c8;
+  --text-color: #9c9ab6;
+  --backgroud: #ffffff;
 }
 
 body {
-    position: relative;
-    height: 100vh;
-    width: 100vw;
-    background-color: var(--backgroud);
+  position: relative;
+  height: 100vh;
+  width: 100vw;
+  background-color: var(--backgroud);
 }
 
 .top {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 108vw;
-    background-size: auto auto;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 108vw;
+  background-size: auto auto;
 }
 
 .bottom {
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    width: 108vw;
-    background-size: auto auto;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 108vw;
+  background-size: auto auto;
 }
 
 .rocket {
-    position: absolute;
-    width: 607px;
-    height: 435px;
-    left: 52vw;
-    top: 25vh;
+  position: absolute;
+  width: 30rem;
+  height: 70rem;
+  left: max(60vw, 600px);
+  top: 25vh;
 }
 
 .container {
-    position: absolute;
-    width: 800px;
-    left: 5vw;
-    top: 25vh;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
+  position: absolute;
+  width: 33.12rem;
+  left: 10vw;
+  top: 25vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
 
 .ready-to-launch {
-    font-style: normal;
-    font-weight: bold;
-    font-size: 1.29rem;
-    line-height: 3.37rem;
-    letter-spacing: 0.105em;
-    text-transform: uppercase;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 1.3rem;
+  line-height: 3.37rem;
+  letter-spacing: 0.105em;
+  text-transform: uppercase;
+  width: 33.12rem;
 
-    color: var(--purple);
+  color: var(--purple);
 }
 
-.countdown-text{
-    margin-top: 32px;
-    width: 480px;
-    display: flex;
-    flex-direction: row;
-    justify-content: flex-start;
-    align-items: left;
+.countdown-text {
+  margin-top: 2rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 33.12rem;
 
-    font-style: normal;
-    font-weight: 300;
-    line-height: 21px;
-    text-transform: capitalize;
+  font-style: normal;
+  font-weight: 300;
+  line-height: 1.31rem;
+  text-transform: capitalize;
 
-    color: #C8C8C8;
+  color: #c8c8c8;
 }
 
 .countdown-function {
-    font-style: normal;
-    font-weight: normal;
-    font-size: 72px;
-    line-height: 108px;
+  width: 33.12rem;
+  padding-top: 1rem;
 
-    max-width: 530px;
+  justify-content: flex-start;
 
-    color: var(--black);
+  font-family: 'Azeret Mono', monospace;
+  font-size: 4.60em;
+
+  color: var(--black);
 }
 
 .dias {
-    margin-left: 20px;
+  text-align: center;
+  width: 25%;
+  padding-right: 7%;
 }
 
 .horas {
-    margin-left: 95px;
+  text-align: center;
+  width: 25%;
+  padding-right: 3%;
 }
 
 .minutos {
-    margin-left: 83px;
+  text-align: center;
+  width: 25%;
+  padding-left: 3%;
 }
 
 .segundos {
-    margin-left: 70px;
+  text-align: center;
+  width: 25%;
+  padding-left: 5%;
 }
 
 .register-text {
-    font-style: normal;
-    font-weight: normal;
-    font-size: 14px;
-    line-height: 21px;
-    margin-top: 41px;
+  width: 33.12rem;
+  justify-content: center;
 
-    color: var(--text-color);
+  text-align: center;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 0.875rem;
+  line-height: 1.31rem;
+  margin-top: 2.56rem;
+
+  color: var(--text-color);
 }
 
 .btn-register {
-    color: white;
-    background-color: var(--purple);
-    border: 0;
-    padding: 10px;
-    border-radius: 7px;
-    margin-top: 31px;
+  color: white;
+  background-color: var(--purple);
+  border: 0;
+  padding: 0.625rem;
+  border-radius: 0.638rem;
+  margin-top: 31px;
 
-    font-style: normal;
-    font-weight: normal;
-    line-height: 24px;
+  font-style: normal;
+  font-weight: normal;
+  line-height: 1.938rem;
 }
-

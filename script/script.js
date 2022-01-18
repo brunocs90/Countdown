@@ -1,26 +1,23 @@
 function updateTimer() {
-    let countdown = document.getElementById('countdown-function')
-    const countDownDate = new Date('Jan 16, 2022 00:00:01')
-    const now = new Date().getTime()
-    const diferenceOfTheDay = countDownDate - now
+    let countdown = document.getElementById('countdown-function');
+    const now = new Date().getTime();
 
+    const launch = new Date('Jan 25, 2022 00:00:01')
+    if (now > launch) {
+        return countdown.innerHTML = '00:00:00:00';
+    }
+
+    const diferenceOfTheDay = launch - now
     days = Math.floor(diferenceOfTheDay / (1000 * 60 * 60 * 24))
     hours = Math.floor(diferenceOfTheDay / (1000 * 60 * 60))
     mins = Math.floor(diferenceOfTheDay / (1000 * 60))
     secs = Math.floor(diferenceOfTheDay / 1000)
 
-    d = days;
-    h = hours - days * 24
-    m = mins - hours * 60
-    s = secs - mins * 60
-
-    dias = formatTimer(d);
-    horas = formatTimer(h);
-    minutos = formatTimer(m);
-    segundos = formatTimer(s);
-
-    countdown.innerHTML =
-        dias + ' : ' + horas + ' : ' + minutos + ' : ' + segundos
+    dias = formatTimer(days);
+    horas = formatTimer(hours - days * 24)
+    minutos = formatTimer(mins - hours * 60)
+    segundos = formatTimer(secs - mins * 60)
+    countdown.innerHTML = dias + ':' + horas + ':' + minutos + ':' + segundos;
 }
 
 function formatTimer(time) {
