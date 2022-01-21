@@ -2,7 +2,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: "Poppins", sans-serif;
+  font-family: 'Poppins', sans-serif;
 }
 
 :root {
@@ -14,6 +14,7 @@
 }
 
 body {
+  background-color: #F1F1F2;
   position: relative;
   height: 100vh;
   width: 100vw;
@@ -143,4 +144,8 @@ body {
   font-style: normal;
   font-weight: normal;
   line-height: 1.938rem;
+}
+
+.btn-register:hover {
+  background: #B39DDB;
 }
