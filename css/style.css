@@ -2,7 +2,6 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: 'Poppins', sans-serif;
 }
 
 :root {
@@ -14,6 +13,7 @@
 }
 
 body {
+  font-family: 'Poppins', sans-serif;
   background-color: #F1F1F2;
   position: relative;
   height: 100vh;
@@ -57,23 +57,22 @@ body {
 }
 
 .ready-to-launch {
-  font-style: normal;
-  font-weight: bold;
-  font-size: 1.3rem;
-  line-height: 3.37rem;
-  letter-spacing: 0.105em;
-  text-transform: uppercase;
   width: 33.12rem;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 2.5rem;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
 
   color: var(--purple);
 }
 
 .countdown-text {
+  width: 33.12rem;
   margin-top: 2rem;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  width: 33.12rem;
 
   font-style: normal;
   font-weight: 300;
@@ -85,12 +84,11 @@ body {
 
 .countdown-function {
   width: 33.12rem;
-  padding-top: 1rem;
-
-  justify-content: flex-start;
 
   font-family: 'Azeret Mono', monospace;
-  font-size: 4.60em;
+  font-size: 5.25em;
+  padding-top: 1rem;
+  justify-content: flex-start;
 
   color: var(--black);
 }
@@ -139,7 +137,7 @@ body {
   border: 0;
   padding: 0.625rem;
   border-radius: 0.638rem;
-  margin-top: 31px;
+  margin-top: 2px;
 
   font-style: normal;
   font-weight: normal;
